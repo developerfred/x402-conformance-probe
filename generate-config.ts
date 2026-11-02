@@ -8,7 +8,6 @@ function main() {
   const discovered: Array<{ name: string; url: string; channel: string }> =
     JSON.parse(fs.readFileSync(DISCOVERED, "utf8"));
 
-  // Os 5 primeiros endpoints conhecidos (documentados na web) + os descobertos
   const seeds = [
     {
       name: "CoinMarketCap (dex search)",
@@ -39,34 +38,30 @@ function main() {
     },
   ];
 
-  // Combina seeds + descobertos, deduplicando por URL
   const seen = new Set<string>();
   const all: Array<{ name: string; url: string; channel: string }> = [];
-
   const add = (e: { name: string; url: string; channel: string }) => {
     if (seen.has(e.url)) return;
     seen.add(e.url);
     all.push(e);
   };
-
   seeds.forEach(add);
   discovered.forEach(add);
 
-  // Pega os primeiros 30 (expansão para cobrir mais endpoints)
-  const top20 = all.slice(0, 30);
+  // Primeiros 100 endpoints para sondagem
+  const top = all.slice(0, 100);
 
-  const lines = top20.map(
+  const lines = top.map(
     (e) => `  {\n    name: ${JSON.stringify(e.name)},\n    url: ${JSON.stringify(e.url)},\n    channel: ${JSON.stringify(e.channel)}\n  }`
   );
 
   const content = `// Lista de endpoints x402 públicos a serem sondados.
 // Cada entrada: { name, url, channel (canal documentado de contato do dono) }
-// Os 5 primeiros são endpoints conhecidos/documentados; os demais vêm do
-// diretório x402-list.com (serviços online com pagamento pronto).
+// Gerado a partir do diretório x402-list.com (serviços online com pagamento pronto).
 export const ENDPOINTS = [\n${lines.join(",\n")}\n];\n`;
 
   fs.writeFileSync(OUT, content);
-  console.log(`✅ ${OUT} gerado com ${top20.length} endpoints.`);
+  console.log(`✅ ${OUT} gerado com ${top.length} endpoints (de ${all.length} descobertos no total).`);
 }
 
 main();

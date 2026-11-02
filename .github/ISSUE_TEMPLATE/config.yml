@@ -1,0 +1,45 @@
+name: x402 Conformance Defect
+description: Reporte um defeito de conformidade x402 encontrado pelo probe
+title: "[x402] <endpoint> — <motivo breve da falha>"
+labels: ["conformance", "x402", "defect"]
+body:
+  - type: input
+    id: endpoint
+    attributes:
+      label: Endpoint
+      description: URL do endpoint x402
+      placeholder: https://exemplo.com/api/v1/recurso
+    validations:
+      required: true
+  - type: input
+    id: status
+    attributes:
+      label: Status HTTP
+      description: Código HTTP retornado na requisição sem pagamento
+      placeholder: 402
+    validations:
+      required: true
+  - type: textarea
+    id: motivo
+    attributes:
+      label: Motivo da falha
+      description: Uma linha descrevendo o defeito encontrado
+      placeholder: Ex: corpo sem x402Version nem accepts[]
+    validations:
+      required: true
+  - type: input
+    id: fixture
+    attributes:
+      label: Arquivo do fixture
+      description: Nome do arquivo em fixtures/
+      placeholder: fixtures/nomedoendpoint.json
+    validations:
+      required: true
+  - type: input
+    id: canal
+    attributes:
+      label: Canal do dono
+      description: Link para documentação ou contato do dono do endpoint
+      placeholder: https://exemplo.com/docs
+    validations:
+      required: true
