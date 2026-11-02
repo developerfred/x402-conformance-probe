@@ -15,25 +15,25 @@ Toda falha é reproduzível a partir do fixture salvo em `fixtures/<slug>.json` 
 | # | Endpoint | Status | Motivo | Canal do dono | Issue |
 |---|----------|--------|--------|---------------|-------|
 | 1 | CoinMarketCap (dex search) | 402 | ✅ PASS — oferta válida | https://coinmarketcap.com/api/documentation/ai-agent-hub/x402 | — |
-| 2 | Financial Datasets (earnings) | 402 | corpo sem `x402Version` nem `accepts[]` | https://docs.financialdatasets.ai/x402 | #issue-financialdatasets |
-| 3 | OpenWeb Ninja (JSearch jobs) | 402 | `network` é `"base"` (não `"eip155:8453"`); usa `maxAmountRequired` em vez de `amount` | https://www.openwebninja.com/blog/x402-agentic-payments | #issue-openwebninja |
-| 4 | Averray Verify · /verify/runs | 405 | método não permitido (não retorna 402) | https://averray.com/verify/ | #issue-averray |
-| 5 | Browserbase (x402 endpoint) | 200 | não exige pagamento (sem 402) | https://docs.browserbase.com/integrations/x402/introduction | #issue-browserbase |
-| 6 | Exa (search API) | 404 | endpoint não encontrado | https://exa.ai/docs/integrations/payments/x402/quickstart | #issue-exa |
-| 7 | Qonoro Intelligence API · /v1/address/normalize | 405 | método não permitido | https://qonoro.ai | #issue-qonoro |
-| 8 | sol-defi-desk · /v1/lending-reserve | 402 | `network` é CAIP-2 Solana (não `eip155`) | https://95.216.126.169.sslip.io/ | #issue-soldefidesk |
-| 9 | sol-defi-desk · /v1/token-check | 402 | idem | https://95.216.126.169.sslip.io/ | #issue-soldefidesk |
-| 10 | sol-defi-desk · /v1/token-check/batch | 402 | idem | https://95.216.126.169.sslip.io/ | #issue-soldefidesk |
-| 11 | SolMachina · /v1/epoch | 402 | corpo vazio `{}` (sem oferta) | https://api.solmachina.com | #issue-solmachina |
-| 12 | SolMachina · /v1/kamino/markets | 402 | corpo vazio `{}` | https://api.solmachina.com | #issue-solmachina |
-| 13 | SolMachina · /v1/pretrade | 402 | corpo vazio `{}` | https://api.solmachina.com | #issue-solmachina |
-| 14 | SolMachina · /v1/priority-fee | 402 | corpo vazio `{}` | https://api.solmachina.com | #issue-solmachina |
-| 15 | SolMachina · /v1/sgp-checkpoint | 402 | corpo vazio `{}` | https://api.solmachina.com | #issue-solmachina |
-| 16 | SolMachina · /v1/tipfloor | 402 | corpo vazio `{}` | https://api.solmachina.com | #issue-solmachina |
-| 17 | SolMachina · /v1/token-intel | 402 | corpo vazio `{}` | https://api.solmachina.com | #issue-solmachina |
-| 18 | SolMachina · /v1/token-risk | 402 | corpo vazio `{}` | https://api.solmachina.com | #issue-solmachina |
-| 19 | SolMachina · /v1/tx-inspect | 402 | corpo vazio `{}` | https://api.solmachina.com | #issue-solmachina |
-| 20 | SolMachina · /v1/wallet-scan | 402 | corpo vazio `{}` | https://api.solmachina.com | #issue-solmachina |
+| 2 | Financial Datasets (earnings) | 402 | corpo sem `x402Version` nem `accepts[]` | https://docs.financialdatasets.ai/x402 | [#7](https://github.com/developerfred/x402-conformance-probe/issues/7) |
+| 3 | OpenWeb Ninja (JSearch jobs) | 402 | `network` é `"base"` (não `"eip155:8453"`); usa `maxAmountRequired` em vez de `amount` | https://www.openwebninja.com/blog/x402-agentic-payments | [#6](https://github.com/developerfred/x402-conformance-probe/issues/6) |
+| 4 | Averray Verify · /verify/runs | 405 | método não permitido (não retorna 402) | https://averray.com/verify/ | [#3](https://github.com/developerfred/x402-conformance-probe/issues/3) |
+| 5 | Browserbase (x402 endpoint) | 200 | não exige pagamento (sem 402) | https://docs.browserbase.com/integrations/x402/introduction | [#2](https://github.com/developerfred/x402-conformance-probe/issues/2) |
+| 6 | Exa (search API) | 404 | endpoint não encontrado | https://exa.ai/docs/integrations/payments/x402/quickstart | [#4](https://github.com/developerfred/x402-conformance-probe/issues/4) |
+| 7 | Qonoro Intelligence API · /v1/address/normalize | 405 | método não permitido | https://qonoro.ai | [#1](https://github.com/developerfred/x402-conformance-probe/issues/1) |
+| 8 | sol-defi-desk · /v1/lending-reserve | 402 | `network` é CAIP-2 Solana (não `eip155`) | https://95.216.126.169.sslip.io/ | [#8](https://github.com/developerfred/x402-conformance-probe/issues/8) |
+| 9 | sol-defi-desk · /v1/token-check | 402 | idem | https://95.216.126.169.sslip.io/ | [#8](https://github.com/developerfred/x402-conformance-probe/issues/8) |
+| 10 | sol-defi-desk · /v1/token-check/batch | 402 | idem | https://95.216.126.169.sslip.io/ | [#8](https://github.com/developerfred/x402-conformance-probe/issues/8) |
+| 11 | SolMachina · /v1/epoch | 402 | corpo vazio `{}` (sem oferta) | https://api.solmachina.com | [#5](https://github.com/developerfred/x402-conformance-probe/issues/5) |
+| 12 | SolMachina · /v1/kamino/markets | 402 | corpo vazio `{}` | https://api.solmachina.com | [#5](https://github.com/developerfred/x402-conformance-probe/issues/5) |
+| 13 | SolMachina · /v1/pretrade | 402 | corpo vazio `{}` | https://api.solmachina.com | [#5](https://github.com/developerfred/x402-conformance-probe/issues/5) |
+| 14 | SolMachina · /v1/priority-fee | 402 | corpo vazio `{}` | https://api.solmachina.com | [#5](https://github.com/developerfred/x402-conformance-probe/issues/5) |
+| 15 | SolMachina · /v1/sgp-checkpoint | 402 | corpo vazio `{}` | https://api.solmachina.com | [#5](https://github.com/developerfred/x402-conformance-probe/issues/5) |
+| 16 | SolMachina · /v1/tipfloor | 402 | corpo vazio `{}` | https://api.solmachina.com | [#5](https://github.com/developerfred/x402-conformance-probe/issues/5) |
+| 17 | SolMachina · /v1/token-intel | 402 | corpo vazio `{}` | https://api.solmachina.com | [#5](https://github.com/developerfred/x402-conformance-probe/issues/5) |
+| 18 | SolMachina · /v1/token-risk | 402 | corpo vazio `{}` | https://api.solmachina.com | [#5](https://github.com/developerfred/x402-conformance-probe/issues/5) |
+| 19 | SolMachina · /v1/tx-inspect | 402 | corpo vazio `{}` | https://api.solmachina.com | [#5](https://github.com/developerfred/x402-conformance-probe/issues/5) |
+| 20 | SolMachina · /v1/wallet-scan | 402 | corpo vazio `{}` | https://api.solmachina.com | [#5](https://github.com/developerfred/x402-conformance-probe/issues/5) |
 
 ## Endpoint de teste próprio (paid retry)
 
