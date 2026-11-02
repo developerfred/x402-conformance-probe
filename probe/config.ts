@@ -102,5 +102,55 @@ export const ENDPOINTS = [
     name: "Qonoro Intelligence API · /v1/address/normalize",
     url: "https://api.qonoro.ai/v1/address/normalize",
     channel: "https://qonoro.ai"
+  },
+  {
+    name: "Qonoro Intelligence API · /v1/company/enrich",
+    url: "https://api.qonoro.ai/v1/company/enrich",
+    channel: "https://qonoro.ai"
+  },
+  {
+    name: "Qonoro Intelligence API · /v1/company/research",
+    url: "https://api.qonoro.ai/v1/company/research",
+    channel: "https://qonoro.ai"
+  },
+  {
+    name: "Qonoro Intelligence API · /v1/company/search",
+    url: "https://api.qonoro.ai/v1/company/search",
+    channel: "https://qonoro.ai"
+  },
+  {
+    name: "Qonoro Intelligence API · /v1/competitors/analyze",
+    url: "https://api.qonoro.ai/v1/competitors/analyze",
+    channel: "https://qonoro.ai"
+  },
+  {
+    name: "Qonoro Intelligence API · /v1/domain-resolver/resolve",
+    url: "https://api.qonoro.ai/v1/domain-resolver/resolve",
+    channel: "https://qonoro.ai"
+  },
+  {
+    name: "Qonoro Intelligence API · /v1/domain/intelligence",
+    url: "https://api.qonoro.ai/v1/domain/intelligence",
+    channel: "https://qonoro.ai"
+  },
+  {
+    name: "Qonoro Intelligence API · /v1/email/validate",
+    url: "https://api.qonoro.ai/v1/email/validate",
+    channel: "https://qonoro.ai"
+  },
+  {
+    name: "Qonoro Intelligence API · /v1/hiring-signals/find",
+    url: "https://api.qonoro.ai/v1/hiring-signals/find",
+    channel: "https://qonoro.ai"
+  },
+  {
+    name: "Qonoro Intelligence API · /v1/intent-signals/find",
+    url: "https://api.qonoro.ai/v1/intent-signals/find",
+    channel: "https://qonoro.ai"
+  },
+  {
+    name: "Qonoro Intelligence API · /v1/job-changes/detect",
+    url: "https://api.qonoro.ai/v1/job-changes/detect",
+    channel: "https://qonoro.ai"
   }
 ];

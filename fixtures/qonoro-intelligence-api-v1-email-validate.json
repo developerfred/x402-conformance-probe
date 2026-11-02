@@ -1,0 +1,25 @@
+{
+  "name": "Qonoro Intelligence API · /v1/email/validate",
+  "url": "https://api.qonoro.ai/v1/email/validate",
+  "channel": "https://qonoro.ai",
+  "fetchedAt": "2026-11-02T13:05:05.277Z",
+  "status": 405,
+  "headers": {
+    "allow": "POST",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a54359462cc6e1b5-MRS",
+    "connection": "keep-alive",
+    "content-length": "31",
+    "content-type": "application/json",
+    "date": "Mon, 02 Nov 2026 13:05:05 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=HojG71naHuziMMxDLHY8ijjLTD8xF729qSyV9eLK5KTmc4z6nDllY0QY4vT0dkRWSOJWQuJBlGa51d%2FMWMoezS9XRTYZFiPf%2FZ5i3IZs7eO%2FSeGcydE87VBVHAu3gqJ5%2BiejDJPuUMUtSDDG\"}]}",
+    "server": "cloudflare",
+    "x-hikari-trace": "cdg1.e9jw",
+    "x-railway-edge": "cdg1",
+    "x-railway-request-id": "JeV_5Wq_R7GArE71LPU1MQ"
+  },
+  "body": "{\"detail\":\"Method Not Allowed\"}",
+  "error": null
+}

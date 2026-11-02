@@ -1,0 +1,25 @@
+{
+  "name": "Qonoro Intelligence API · /v1/job-changes/detect",
+  "url": "https://api.qonoro.ai/v1/job-changes/detect",
+  "channel": "https://qonoro.ai",
+  "fetchedAt": "2026-11-02T13:05:06.765Z",
+  "status": 405,
+  "headers": {
+    "allow": "POST",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a543594f6c65da75-MRS",
+    "connection": "keep-alive",
+    "content-length": "31",
+    "content-type": "application/json",
+    "date": "Mon, 02 Nov 2026 13:05:06 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=rWVo%2Bm%2FGX%2BiKcBfHxpeW3kTDy9I1S1APbDdNVy4k%2FBgRWQd%2B%2Bv496UCnCf09ggWMzsHIaSNa8eeqgg2lV%2BfFsnYNV4IeO8SiItKBAeuXsleqrmTdI8yoDoBByUrNsMohhE1eylNC3lGnaMXn\"}]}",
+    "server": "cloudflare",
+    "x-hikari-trace": "cdg1.8vsn",
+    "x-railway-edge": "cdg1",
+    "x-railway-request-id": "mT42jrVHR9qohsR00_TJvA"
+  },
+  "body": "{\"detail\":\"Method Not Allowed\"}",
+  "error": null
+}

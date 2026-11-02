@@ -1,0 +1,25 @@
+{
+  "name": "Qonoro Intelligence API · /v1/domain/intelligence",
+  "url": "https://api.qonoro.ai/v1/domain/intelligence",
+  "channel": "https://qonoro.ai",
+  "fetchedAt": "2026-11-02T13:05:04.902Z",
+  "status": 405,
+  "headers": {
+    "allow": "POST",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a5435943a985da75-MRS",
+    "connection": "keep-alive",
+    "content-length": "31",
+    "content-type": "application/json",
+    "date": "Mon, 02 Nov 2026 13:05:04 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Js%2BkRoqzFzgF8Y05%2F%2FBH3CXFAxqoVAmCCLNLotM0%2FKMBM97E1tipoiVtTpBtBrIk1I%2BRT002%2BvZUEYQIOKazw1z%2F04YN9CMCN7sPh%2FheXeI2qRJ9w8N%2FOQltPSwYObvczf3kt%2Bk4ZKkqMZnQ\"}]}",
+    "server": "cloudflare",
+    "x-hikari-trace": "cdg1.e9jw",
+    "x-railway-edge": "cdg1",
+    "x-railway-request-id": "nl4vVm1pQT-bh6Kr0_TJvA"
+  },
+  "body": "{\"detail\":\"Method Not Allowed\"}",
+  "error": null
+}

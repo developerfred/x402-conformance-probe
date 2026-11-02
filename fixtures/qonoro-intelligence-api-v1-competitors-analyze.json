@@ -1,0 +1,25 @@
+{
+  "name": "Qonoro Intelligence API · /v1/competitors/analyze",
+  "url": "https://api.qonoro.ai/v1/competitors/analyze",
+  "channel": "https://qonoro.ai",
+  "fetchedAt": "2026-11-02T13:05:04.136Z",
+  "status": 405,
+  "headers": {
+    "allow": "POST",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a543593f0bffda75-MRS",
+    "connection": "keep-alive",
+    "content-length": "31",
+    "content-type": "application/json",
+    "date": "Mon, 02 Nov 2026 13:05:04 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=TaiKOmY03fW%2FvSTGAmYERRnDhvm6CzhOnkQECSo%2F7zWqT6%2FLzlJBbsAXSDtzt5biUvjdX4ZBF1ZjbMd4jRwf2sKy3b1XQgkAkN0bO1Y%2FltV1YoJFJpF%2BOcH3xzbPoY%2F%2B7M296h4upv0BfHt%2F\"}]}",
+    "server": "cloudflare",
+    "x-hikari-trace": "cdg1.e9jw",
+    "x-railway-edge": "cdg1",
+    "x-railway-request-id": "ZeVS-KZcRomhRmrspHNmDw"
+  },
+  "body": "{\"detail\":\"Method Not Allowed\"}",
+  "error": null
+}

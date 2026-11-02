@@ -15,6 +15,8 @@ interface Fixture {
   headers: Record<string, string>;
   body: string;
   error: string | null;
+  responseTimeMs: number | null;
+  bodySize: number;
 }
 
 interface ReportRow {
@@ -26,6 +28,9 @@ interface ReportRow {
   ok: boolean;
   reason: string;
   headerMatchBody: boolean | null;
+  responseTimeMs: number | null;
+  bodySize: number;
+  acceptsCount: number;
 }
 
 function slug(name: string): string {
@@ -74,6 +79,8 @@ export function runReport(): void {
       ? validation.reasons[0]
       : "falha desconhecida";
 
+    const acceptsCount = validation.body?.accepts?.length ?? 0;
+
     rows.push({
       name: fx.name,
       url: fx.url,
@@ -83,6 +90,9 @@ export function runReport(): void {
       ok,
       reason,
       headerMatchBody: validation.headerMatchBody,
+      responseTimeMs: fx.responseTimeMs,
+      bodySize: fx.bodySize,
+      acceptsCount,
     });
   }
 
@@ -104,10 +114,13 @@ export function runReport(): void {
   const rowsHtml = rows
     .map(
       (r) => `
-    <tr>
+    <tr class="${r.ok ? 'pass-row' : 'fail-row'}">
       <td><strong>${escapeHtml(r.name)}</strong></td>
       <td><code>${escapeHtml(r.url)}</code></td>
       <td>HTTP ${r.status ?? "—"}</td>
+      <td>${r.acceptsCount}</td>
+      <td>${r.bodySize} B</td>
+      <td>${r.responseTimeMs ?? "—"} ms</td>
       <td style="color:${statusColor(r.ok)}; font-weight:bold;">
         ${r.ok ? "✅ PASS" : "❌ FAIL"}
       </td>
@@ -137,10 +150,12 @@ export function runReport(): void {
     .fail { color: #dc2626; }
     table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
     th { background: #f1f5f9; text-align: left; padding: 12px 16px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: #475569; border-bottom: 1px solid #e2e8f0; }
+    th:nth-child(4), th:nth-child(5), th:nth-child(6) { text-align: center; }
     td { padding: 12px 16px; border-bottom: 1px solid #f1f5f9; font-size: 14px; vertical-align: top; }
     tr:last-child td { border-bottom: none; }
     tr.pass-row td { background: #f0fdf4; }
     tr.fail-row td { background: #fef2f2; }
+    td:nth-child(4), td:nth-child(5), td:nth-child(6) { text-align: center; }
     code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 12px; word-break: break-all; }
     a { color: #2563eb; text-decoration: none; }
     a:hover { text-decoration: underline; }
@@ -172,6 +187,9 @@ export function runReport(): void {
         <th>Endpoint</th>
         <th>URL</th>
         <th>Status</th>
+        <th>Accepts</th>
+        <th>Body</th>
+        <th>Tempo</th>
         <th>Resultado</th>
         <th>Motivo</th>
         <th>Canal do dono</th>

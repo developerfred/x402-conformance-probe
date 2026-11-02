@@ -7,7 +7,8 @@
     "status": 402,
     "ok": true,
     "reason": "pass",
-    "headerMatchBody": true
+    "headerMatchBody": true,
+    "acceptsCount": 7
   },
   {
     "name": "Averray Verify · /verify/runs",
@@ -17,7 +18,8 @@
     "status": 405,
     "ok": false,
     "reason": "status HTTP 405, esperado 402",
-    "headerMatchBody": null
+    "headerMatchBody": null,
+    "acceptsCount": 0
   },
   {
     "name": "Browserbase (x402 endpoint)",
@@ -27,7 +29,8 @@
     "status": 200,
     "ok": false,
     "reason": "status HTTP 200, esperado 402",
-    "headerMatchBody": null
+    "headerMatchBody": null,
+    "acceptsCount": 0
   },
   {
     "name": "Exa (search API)",
@@ -37,7 +40,8 @@
     "status": 404,
     "ok": false,
     "reason": "status HTTP 404, esperado 402",
-    "headerMatchBody": null
+    "headerMatchBody": null,
+    "acceptsCount": 0
   },
   {
     "name": "Financial Datasets (earnings)",
@@ -47,7 +51,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo: x402Version ausente ou não numérico",
-    "headerMatchBody": false
+    "headerMatchBody": false,
+    "acceptsCount": 0
   },
   {
     "name": "OpenWeb Ninja (JSearch jobs)",
@@ -57,7 +62,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo entry[0]: network inválido (\"base\")",
-    "headerMatchBody": false
+    "headerMatchBody": false,
+    "acceptsCount": 2
   },
   {
     "name": "Qonoro Intelligence API · /v1/address/normalize",
@@ -67,7 +73,118 @@
     "status": 405,
     "ok": false,
     "reason": "status HTTP 405, esperado 402",
-    "headerMatchBody": null
+    "headerMatchBody": null,
+    "acceptsCount": 0
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/company/enrich",
+    "url": "https://api.qonoro.ai/v1/company/enrich",
+    "channel": "https://qonoro.ai",
+    "file": "qonoro-intelligence-api-v1-company-enrich.json",
+    "status": 405,
+    "ok": false,
+    "reason": "status HTTP 405, esperado 402",
+    "headerMatchBody": null,
+    "acceptsCount": 0
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/company/research",
+    "url": "https://api.qonoro.ai/v1/company/research",
+    "channel": "https://qonoro.ai",
+    "file": "qonoro-intelligence-api-v1-company-research.json",
+    "status": 405,
+    "ok": false,
+    "reason": "status HTTP 405, esperado 402",
+    "headerMatchBody": null,
+    "acceptsCount": 0
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/company/search",
+    "url": "https://api.qonoro.ai/v1/company/search",
+    "channel": "https://qonoro.ai",
+    "file": "qonoro-intelligence-api-v1-company-search.json",
+    "status": 405,
+    "ok": false,
+    "reason": "status HTTP 405, esperado 402",
+    "headerMatchBody": null,
+    "acceptsCount": 0
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/competitors/analyze",
+    "url": "https://api.qonoro.ai/v1/competitors/analyze",
+    "channel": "https://qonoro.ai",
+    "file": "qonoro-intelligence-api-v1-competitors-analyze.json",
+    "status": 405,
+    "ok": false,
+    "reason": "status HTTP 405, esperado 402",
+    "headerMatchBody": null,
+    "acceptsCount": 0
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/domain/intelligence",
+    "url": "https://api.qonoro.ai/v1/domain/intelligence",
+    "channel": "https://qonoro.ai",
+    "file": "qonoro-intelligence-api-v1-domain-intelligence.json",
+    "status": 405,
+    "ok": false,
+    "reason": "status HTTP 405, esperado 402",
+    "headerMatchBody": null,
+    "acceptsCount": 0
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/domain-resolver/resolve",
+    "url": "https://api.qonoro.ai/v1/domain-resolver/resolve",
+    "channel": "https://qonoro.ai",
+    "file": "qonoro-intelligence-api-v1-domain-resolver-resolve.json",
+    "status": 405,
+    "ok": false,
+    "reason": "status HTTP 405, esperado 402",
+    "headerMatchBody": null,
+    "acceptsCount": 0
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/email/validate",
+    "url": "https://api.qonoro.ai/v1/email/validate",
+    "channel": "https://qonoro.ai",
+    "file": "qonoro-intelligence-api-v1-email-validate.json",
+    "status": 405,
+    "ok": false,
+    "reason": "status HTTP 405, esperado 402",
+    "headerMatchBody": null,
+    "acceptsCount": 0
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/hiring-signals/find",
+    "url": "https://api.qonoro.ai/v1/hiring-signals/find",
+    "channel": "https://qonoro.ai",
+    "file": "qonoro-intelligence-api-v1-hiring-signals-find.json",
+    "status": 405,
+    "ok": false,
+    "reason": "status HTTP 405, esperado 402",
+    "headerMatchBody": null,
+    "acceptsCount": 0
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/intent-signals/find",
+    "url": "https://api.qonoro.ai/v1/intent-signals/find",
+    "channel": "https://qonoro.ai",
+    "file": "qonoro-intelligence-api-v1-intent-signals-find.json",
+    "status": 405,
+    "ok": false,
+    "reason": "status HTTP 405, esperado 402",
+    "headerMatchBody": null,
+    "acceptsCount": 0
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/job-changes/detect",
+    "url": "https://api.qonoro.ai/v1/job-changes/detect",
+    "channel": "https://qonoro.ai",
+    "file": "qonoro-intelligence-api-v1-job-changes-detect.json",
+    "status": 405,
+    "ok": false,
+    "reason": "status HTTP 405, esperado 402",
+    "headerMatchBody": null,
+    "acceptsCount": 0
   },
   {
     "name": "sol-defi-desk · /v1/lending-reserve",
@@ -77,7 +194,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo entry[0]: network inválido (\"solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp\")",
-    "headerMatchBody": true
+    "headerMatchBody": true,
+    "acceptsCount": 2
   },
   {
     "name": "sol-defi-desk · /v1/token-check/batch",
@@ -87,7 +205,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo entry[0]: network inválido (\"solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp\")",
-    "headerMatchBody": true
+    "headerMatchBody": true,
+    "acceptsCount": 2
   },
   {
     "name": "sol-defi-desk · /v1/token-check",
@@ -97,7 +216,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo entry[0]: network inválido (\"solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp\")",
-    "headerMatchBody": true
+    "headerMatchBody": true,
+    "acceptsCount": 2
   },
   {
     "name": "SolMachina · /v1/epoch",
@@ -107,7 +227,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo: x402Version ausente ou não numérico",
-    "headerMatchBody": false
+    "headerMatchBody": false,
+    "acceptsCount": 0
   },
   {
     "name": "SolMachina · /v1/kamino/markets",
@@ -117,7 +238,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo: x402Version ausente ou não numérico",
-    "headerMatchBody": false
+    "headerMatchBody": false,
+    "acceptsCount": 0
   },
   {
     "name": "SolMachina · /v1/pretrade",
@@ -127,7 +249,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo: x402Version ausente ou não numérico",
-    "headerMatchBody": false
+    "headerMatchBody": false,
+    "acceptsCount": 0
   },
   {
     "name": "SolMachina · /v1/priority-fee",
@@ -137,7 +260,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo: x402Version ausente ou não numérico",
-    "headerMatchBody": false
+    "headerMatchBody": false,
+    "acceptsCount": 0
   },
   {
     "name": "SolMachina · /v1/sgp-checkpoint",
@@ -147,7 +271,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo: x402Version ausente ou não numérico",
-    "headerMatchBody": false
+    "headerMatchBody": false,
+    "acceptsCount": 0
   },
   {
     "name": "SolMachina · /v1/tipfloor",
@@ -157,7 +282,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo: x402Version ausente ou não numérico",
-    "headerMatchBody": false
+    "headerMatchBody": false,
+    "acceptsCount": 0
   },
   {
     "name": "SolMachina · /v1/token-intel",
@@ -167,7 +293,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo: x402Version ausente ou não numérico",
-    "headerMatchBody": false
+    "headerMatchBody": false,
+    "acceptsCount": 0
   },
   {
     "name": "SolMachina · /v1/token-risk",
@@ -177,7 +304,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo: x402Version ausente ou não numérico",
-    "headerMatchBody": false
+    "headerMatchBody": false,
+    "acceptsCount": 0
   },
   {
     "name": "SolMachina · /v1/tx-inspect",
@@ -187,7 +315,8 @@
     "status": 402,
     "ok": false,
     "reason": "corpo: x402Version ausente ou não numérico",
-    "headerMatchBody": false
+    "headerMatchBody": false,
+    "acceptsCount": 0
   },
   {
     "name": "SolMachina · /v1/wallet-scan",
@@ -197,6 +326,7 @@
     "status": 402,
     "ok": false,
     "reason": "corpo: x402Version ausente ou não numérico",
-    "headerMatchBody": false
+    "headerMatchBody": false,
+    "acceptsCount": 0
   }
 ]

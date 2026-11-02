@@ -1,0 +1,46 @@
+# x402 Conformance Monitor — CI
+
+Este workflow executa o probe de conformidade x402 diariamente e em cada push,
+gerando o relatório pass/fail e publicando no Vercel.
+
+name: x402 Conformance Monitor
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # todo dia às 02:00 UTC
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  conformance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm ci --prefix /Volumes/MASS/x402-check 2>/dev/null || npm ci
+
+      - name: Run fetch + validate + report
+        run: |
+          npm run fetch
+          npm run validate
+          npm run report
+
+      - name: Commit and push updated fixtures/report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: update x402 conformance fixtures and report" || true
+          git push
+
+      - name: Deploy to Vercel
+        run: npx vercel deploy --prod --yes --scope developer-freds-projects
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}

@@ -1,0 +1,25 @@
+{
+  "name": "Qonoro Intelligence API · /v1/company/enrich",
+  "url": "https://api.qonoro.ai/v1/company/enrich",
+  "channel": "https://qonoro.ai",
+  "fetchedAt": "2026-11-02T13:05:03.094Z",
+  "status": 405,
+  "headers": {
+    "allow": "POST",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a5435937ecbfe1b5-MRS",
+    "connection": "keep-alive",
+    "content-length": "31",
+    "content-type": "application/json",
+    "date": "Mon, 02 Nov 2026 13:05:03 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2FFraAxbGl6ZLqFbmSSEMLzOACZOrVHOBCaDGh2nGJ5rOaJvqmD8ijnnFBY0qGbQQZjVwTFEYI%2BeJ13j%2BIkFzyshXYrt6bRNJGSlRuzrP39LRpgWgscVmH6W2ycI7UYevkeWKLiAXc3Ivin1P\"}]}",
+    "server": "cloudflare",
+    "x-hikari-trace": "cdg1.e9jw",
+    "x-railway-edge": "cdg1",
+    "x-railway-request-id": "IAcv4Y37S8OwLw54pHNmDw"
+  },
+  "body": "{\"detail\":\"Method Not Allowed\"}",
+  "error": null
+}

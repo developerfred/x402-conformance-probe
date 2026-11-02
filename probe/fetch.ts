@@ -25,6 +25,8 @@ interface Fixture {
   headers: Record<string, string>;
   body: string;
   error: string | null;
+  responseTimeMs: number | null;
+  bodySize: number;
   file?: string;
 }
 
@@ -39,6 +41,8 @@ async function fetchEndpoint(ep: { name: string; url: string; channel: string })
   let headers: Record<string, string> = {};
   let bodyText = "";
   let error: string | null = null;
+  let responseTimeMs: number | null = null;
+  const startTime = Date.now();
 
   try {
     const res = await fetch(ep.url, {
@@ -53,8 +57,10 @@ async function fetchEndpoint(ep: { name: string; url: string; channel: string })
     status = res.status;
     headers = Object.fromEntries(res.headers.entries());
     bodyText = await res.text();
+    responseTimeMs = Date.now() - startTime;
   } catch (e: any) {
     error = e?.message ?? String(e);
+    responseTimeMs = Date.now() - startTime;
   } finally {
     clearTimeout(timer);
   }
@@ -68,6 +74,8 @@ async function fetchEndpoint(ep: { name: string; url: string; channel: string })
     headers,
     body: bodyText,
     error,
+    responseTimeMs,
+    bodySize: Buffer.byteLength(bodyText),
   };
 }
 

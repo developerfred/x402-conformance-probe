@@ -1,0 +1,25 @@
+{
+  "name": "Qonoro Intelligence API · /v1/hiring-signals/find",
+  "url": "https://api.qonoro.ai/v1/hiring-signals/find",
+  "channel": "https://qonoro.ai",
+  "fetchedAt": "2026-11-02T13:05:05.718Z",
+  "status": 405,
+  "headers": {
+    "allow": "POST",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a54359488970da75-MRS",
+    "connection": "keep-alive",
+    "content-length": "31",
+    "content-type": "application/json",
+    "date": "Mon, 02 Nov 2026 13:05:05 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=NhsXOOWhsZizI9geOI7zK9WZUCRnYKP4LBnHNS4MOJnW%2BO132U0TCN7GFtqqRUOUWz3cihMksD97Oc2vnUQL24MzbtIdGhf22TmPja1ykqgrHexihKta%2ByOomG6FSfKdoR19WAoWXh7nPr%2BN\"}]}",
+    "server": "cloudflare",
+    "x-hikari-trace": "cdg1.e9jw",
+    "x-railway-edge": "cdg1",
+    "x-railway-request-id": "PRanug1VSv637xqu9fVATg"
+  },
+  "body": "{\"detail\":\"Method Not Allowed\"}",
+  "error": null
+}

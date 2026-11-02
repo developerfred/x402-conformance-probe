@@ -1,7 +1,7 @@
 {
   "name": "x402-conformance-probe",
-  "version": "1.0.0",
-  "description": "Probe de conformidade x402: verifica se endpoints 402 realmente aceitam liquidação. Gera tabela pass/fail para >= 20 endpoints públicos e replays offline a partir de fixtures.",
+  "version": "1.1.0",
+  "description": "Probe de conformidade x402: verifica se endpoints 402 realmente aceitam liquidação. Gera tabela pass/fail para >= 20 endpoints públicos e replays offline a partir de fixtures. Inclui CI para monitoramento contínuo e deploy no Vercel.",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,7 +10,8 @@
     "report": "tsx probe/report.ts",
     "replay": "tsx probe/replay.ts",
     "all": "tsx probe/fetch.ts && tsx probe/validate.ts && tsx probe/report.ts",
-    "test:endpoint": "tsx test-endpoint/server.ts"
+    "test:endpoint": "tsx test-endpoint/server.ts",
+    "paid-retry": "tsx test-endpoint/paid-retry.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",

@@ -1,0 +1,25 @@
+{
+  "name": "Qonoro Intelligence API · /v1/company/research",
+  "url": "https://api.qonoro.ai/v1/company/research",
+  "channel": "https://qonoro.ai",
+  "fetchedAt": "2026-11-02T13:05:03.487Z",
+  "status": 405,
+  "headers": {
+    "allow": "POST",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a543593adf35da75-MRS",
+    "connection": "keep-alive",
+    "content-length": "31",
+    "content-type": "application/json",
+    "date": "Mon, 02 Nov 2026 13:05:03 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=M0U5W6FCzLrMH1YjWcv%2F67RCA6I%2BrLHlJL9ukFFSYxNztPNxhKHlufWeNIxvAzfa7Kwloe4MIGqWRTYgTphaspafRd%2B5FjUYQdnSq4TgxKnP2wDNgz%2BZF1EFvp03UaAkU89t0KLYn55gnJl5\"}]}",
+    "server": "cloudflare",
+    "x-hikari-trace": "cdg1.e9jw",
+    "x-railway-edge": "cdg1",
+    "x-railway-request-id": "sDZmdRx9SEuVWssmY53eZw"
+  },
+  "body": "{\"detail\":\"Method Not Allowed\"}",
+  "error": null
+}

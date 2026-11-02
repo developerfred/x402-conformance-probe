@@ -52,8 +52,8 @@ function main() {
   seeds.forEach(add);
   discovered.forEach(add);
 
-  // Pega os primeiros 20
-  const top20 = all.slice(0, 20);
+  // Pega os primeiros 30 (expansão para cobrir mais endpoints)
+  const top20 = all.slice(0, 30);
 
   const lines = top20.map(
     (e) => `  {\n    name: ${JSON.stringify(e.name)},\n    url: ${JSON.stringify(e.url)},\n    channel: ${JSON.stringify(e.channel)}\n  }`

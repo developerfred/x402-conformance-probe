@@ -16,10 +16,12 @@
     .fail { color: #dc2626; }
     table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
     th { background: #f1f5f9; text-align: left; padding: 12px 16px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: #475569; border-bottom: 1px solid #e2e8f0; }
+    th:nth-child(4), th:nth-child(5), th:nth-child(6) { text-align: center; }
     td { padding: 12px 16px; border-bottom: 1px solid #f1f5f9; font-size: 14px; vertical-align: top; }
     tr:last-child td { border-bottom: none; }
     tr.pass-row td { background: #f0fdf4; }
     tr.fail-row td { background: #fef2f2; }
+    td:nth-child(4), td:nth-child(5), td:nth-child(6) { text-align: center; }
     code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 12px; word-break: break-all; }
     a { color: #2563eb; text-decoration: none; }
     a:hover { text-decoration: underline; }
@@ -33,7 +35,7 @@
   <div class="summary">
     <div class="card">
       <h2>Total</h2>
-      <div class="big">20</div>
+      <div class="big">30</div>
     </div>
     <div class="card">
       <h2>Pass</h2>
@@ -41,7 +43,7 @@
     </div>
     <div class="card">
       <h2>Fail</h2>
-      <div class="big fail">19</div>
+      <div class="big fail">29</div>
     </div>
   </div>
 
@@ -51,6 +53,9 @@
         <th>Endpoint</th>
         <th>URL</th>
         <th>Status</th>
+        <th>Accepts</th>
+        <th>Body</th>
+        <th>Tempo</th>
         <th>Resultado</th>
         <th>Motivo</th>
         <th>Canal do dono</th>
@@ -59,10 +64,13 @@
     </thead>
     <tbody>
       
-    <tr>
+    <tr class="pass-row">
       <td><strong>CoinMarketCap (dex search)</strong></td>
       <td><code>https://pro-api.coinmarketcap.com/x402/v1/dex/search?q=bnb</code></td>
       <td>HTTP 402</td>
+      <td>7</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#16a34a; font-weight:bold;">
         ✅ PASS
       </td>
@@ -71,10 +79,13 @@
       <td><a href="fixtures/coinmarketcap-dex-search.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>Averray Verify · /verify/runs</strong></td>
       <td><code>https://api.averray.com/verify/runs</code></td>
       <td>HTTP 405</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -83,10 +94,13 @@
       <td><a href="fixtures/averray-verify-verify-runs.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>Browserbase (x402 endpoint)</strong></td>
       <td><code>https://x402.browserbase.com/</code></td>
       <td>HTTP 200</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -95,10 +109,13 @@
       <td><a href="fixtures/browserbase-x402-endpoint.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>Exa (search API)</strong></td>
       <td><code>https://api.exa.ai/search</code></td>
       <td>HTTP 404</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -107,10 +124,13 @@
       <td><a href="fixtures/exa-search-api.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>Financial Datasets (earnings)</strong></td>
       <td><code>https://api.financialdatasets.ai/earnings?ticker=NVDA&amp;limit=4</code></td>
       <td>HTTP 402</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -119,10 +139,13 @@
       <td><a href="fixtures/financial-datasets-earnings.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>OpenWeb Ninja (JSearch jobs)</strong></td>
       <td><code>https://x402.openwebninja.com/jsearch/search-v2?query=software+engineer+jobs+in+austin</code></td>
       <td>HTTP 402</td>
+      <td>2</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -131,10 +154,13 @@
       <td><a href="fixtures/openweb-ninja-jsearch-jobs.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>Qonoro Intelligence API · /v1/address/normalize</strong></td>
       <td><code>https://api.qonoro.ai/v1/address/normalize</code></td>
       <td>HTTP 405</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -143,10 +169,163 @@
       <td><a href="fixtures/qonoro-intelligence-api-v1-address-normalize.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
+      <td><strong>Qonoro Intelligence API · /v1/company/enrich</strong></td>
+      <td><code>https://api.qonoro.ai/v1/company/enrich</code></td>
+      <td>HTTP 405</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
+      <td style="color:#dc2626; font-weight:bold;">
+        ❌ FAIL
+      </td>
+      <td>status HTTP 405, esperado 402</td>
+      <td><a href="https://qonoro.ai" target="_blank">canal do dono</a></td>
+      <td><a href="fixtures/qonoro-intelligence-api-v1-company-enrich.json" target="_blank">fixture</a></td>
+    </tr>
+  
+    <tr class="fail-row">
+      <td><strong>Qonoro Intelligence API · /v1/company/research</strong></td>
+      <td><code>https://api.qonoro.ai/v1/company/research</code></td>
+      <td>HTTP 405</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
+      <td style="color:#dc2626; font-weight:bold;">
+        ❌ FAIL
+      </td>
+      <td>status HTTP 405, esperado 402</td>
+      <td><a href="https://qonoro.ai" target="_blank">canal do dono</a></td>
+      <td><a href="fixtures/qonoro-intelligence-api-v1-company-research.json" target="_blank">fixture</a></td>
+    </tr>
+  
+    <tr class="fail-row">
+      <td><strong>Qonoro Intelligence API · /v1/company/search</strong></td>
+      <td><code>https://api.qonoro.ai/v1/company/search</code></td>
+      <td>HTTP 405</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
+      <td style="color:#dc2626; font-weight:bold;">
+        ❌ FAIL
+      </td>
+      <td>status HTTP 405, esperado 402</td>
+      <td><a href="https://qonoro.ai" target="_blank">canal do dono</a></td>
+      <td><a href="fixtures/qonoro-intelligence-api-v1-company-search.json" target="_blank">fixture</a></td>
+    </tr>
+  
+    <tr class="fail-row">
+      <td><strong>Qonoro Intelligence API · /v1/competitors/analyze</strong></td>
+      <td><code>https://api.qonoro.ai/v1/competitors/analyze</code></td>
+      <td>HTTP 405</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
+      <td style="color:#dc2626; font-weight:bold;">
+        ❌ FAIL
+      </td>
+      <td>status HTTP 405, esperado 402</td>
+      <td><a href="https://qonoro.ai" target="_blank">canal do dono</a></td>
+      <td><a href="fixtures/qonoro-intelligence-api-v1-competitors-analyze.json" target="_blank">fixture</a></td>
+    </tr>
+  
+    <tr class="fail-row">
+      <td><strong>Qonoro Intelligence API · /v1/domain/intelligence</strong></td>
+      <td><code>https://api.qonoro.ai/v1/domain/intelligence</code></td>
+      <td>HTTP 405</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
+      <td style="color:#dc2626; font-weight:bold;">
+        ❌ FAIL
+      </td>
+      <td>status HTTP 405, esperado 402</td>
+      <td><a href="https://qonoro.ai" target="_blank">canal do dono</a></td>
+      <td><a href="fixtures/qonoro-intelligence-api-v1-domain-intelligence.json" target="_blank">fixture</a></td>
+    </tr>
+  
+    <tr class="fail-row">
+      <td><strong>Qonoro Intelligence API · /v1/domain-resolver/resolve</strong></td>
+      <td><code>https://api.qonoro.ai/v1/domain-resolver/resolve</code></td>
+      <td>HTTP 405</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
+      <td style="color:#dc2626; font-weight:bold;">
+        ❌ FAIL
+      </td>
+      <td>status HTTP 405, esperado 402</td>
+      <td><a href="https://qonoro.ai" target="_blank">canal do dono</a></td>
+      <td><a href="fixtures/qonoro-intelligence-api-v1-domain-resolver-resolve.json" target="_blank">fixture</a></td>
+    </tr>
+  
+    <tr class="fail-row">
+      <td><strong>Qonoro Intelligence API · /v1/email/validate</strong></td>
+      <td><code>https://api.qonoro.ai/v1/email/validate</code></td>
+      <td>HTTP 405</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
+      <td style="color:#dc2626; font-weight:bold;">
+        ❌ FAIL
+      </td>
+      <td>status HTTP 405, esperado 402</td>
+      <td><a href="https://qonoro.ai" target="_blank">canal do dono</a></td>
+      <td><a href="fixtures/qonoro-intelligence-api-v1-email-validate.json" target="_blank">fixture</a></td>
+    </tr>
+  
+    <tr class="fail-row">
+      <td><strong>Qonoro Intelligence API · /v1/hiring-signals/find</strong></td>
+      <td><code>https://api.qonoro.ai/v1/hiring-signals/find</code></td>
+      <td>HTTP 405</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
+      <td style="color:#dc2626; font-weight:bold;">
+        ❌ FAIL
+      </td>
+      <td>status HTTP 405, esperado 402</td>
+      <td><a href="https://qonoro.ai" target="_blank">canal do dono</a></td>
+      <td><a href="fixtures/qonoro-intelligence-api-v1-hiring-signals-find.json" target="_blank">fixture</a></td>
+    </tr>
+  
+    <tr class="fail-row">
+      <td><strong>Qonoro Intelligence API · /v1/intent-signals/find</strong></td>
+      <td><code>https://api.qonoro.ai/v1/intent-signals/find</code></td>
+      <td>HTTP 405</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
+      <td style="color:#dc2626; font-weight:bold;">
+        ❌ FAIL
+      </td>
+      <td>status HTTP 405, esperado 402</td>
+      <td><a href="https://qonoro.ai" target="_blank">canal do dono</a></td>
+      <td><a href="fixtures/qonoro-intelligence-api-v1-intent-signals-find.json" target="_blank">fixture</a></td>
+    </tr>
+  
+    <tr class="fail-row">
+      <td><strong>Qonoro Intelligence API · /v1/job-changes/detect</strong></td>
+      <td><code>https://api.qonoro.ai/v1/job-changes/detect</code></td>
+      <td>HTTP 405</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
+      <td style="color:#dc2626; font-weight:bold;">
+        ❌ FAIL
+      </td>
+      <td>status HTTP 405, esperado 402</td>
+      <td><a href="https://qonoro.ai" target="_blank">canal do dono</a></td>
+      <td><a href="fixtures/qonoro-intelligence-api-v1-job-changes-detect.json" target="_blank">fixture</a></td>
+    </tr>
+  
+    <tr class="fail-row">
       <td><strong>sol-defi-desk · /v1/lending-reserve</strong></td>
       <td><code>https://95.216.126.169.sslip.io/v1/lending-reserve</code></td>
       <td>HTTP 402</td>
+      <td>2</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -155,10 +334,13 @@
       <td><a href="fixtures/sol-defi-desk-v1-lending-reserve.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>sol-defi-desk · /v1/token-check/batch</strong></td>
       <td><code>https://95.216.126.169.sslip.io/v1/token-check/batch</code></td>
       <td>HTTP 402</td>
+      <td>2</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -167,10 +349,13 @@
       <td><a href="fixtures/sol-defi-desk-v1-token-check-batch.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>sol-defi-desk · /v1/token-check</strong></td>
       <td><code>https://95.216.126.169.sslip.io/v1/token-check</code></td>
       <td>HTTP 402</td>
+      <td>2</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -179,10 +364,13 @@
       <td><a href="fixtures/sol-defi-desk-v1-token-check.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>SolMachina · /v1/epoch</strong></td>
       <td><code>https://api.solmachina.com/v1/epoch</code></td>
       <td>HTTP 402</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -191,10 +379,13 @@
       <td><a href="fixtures/solmachina-v1-epoch.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>SolMachina · /v1/kamino/markets</strong></td>
       <td><code>https://api.solmachina.com/v1/kamino/markets</code></td>
       <td>HTTP 402</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -203,10 +394,13 @@
       <td><a href="fixtures/solmachina-v1-kamino-markets.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>SolMachina · /v1/pretrade</strong></td>
       <td><code>https://api.solmachina.com/v1/pretrade</code></td>
       <td>HTTP 402</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -215,10 +409,13 @@
       <td><a href="fixtures/solmachina-v1-pretrade.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>SolMachina · /v1/priority-fee</strong></td>
       <td><code>https://api.solmachina.com/v1/priority-fee</code></td>
       <td>HTTP 402</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -227,10 +424,13 @@
       <td><a href="fixtures/solmachina-v1-priority-fee.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>SolMachina · /v1/sgp-checkpoint</strong></td>
       <td><code>https://api.solmachina.com/v1/sgp-checkpoint</code></td>
       <td>HTTP 402</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -239,10 +439,13 @@
       <td><a href="fixtures/solmachina-v1-sgp-checkpoint.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>SolMachina · /v1/tipfloor</strong></td>
       <td><code>https://api.solmachina.com/v1/tipfloor</code></td>
       <td>HTTP 402</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -251,10 +454,13 @@
       <td><a href="fixtures/solmachina-v1-tipfloor.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>SolMachina · /v1/token-intel</strong></td>
       <td><code>https://api.solmachina.com/v1/token-intel</code></td>
       <td>HTTP 402</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -263,10 +469,13 @@
       <td><a href="fixtures/solmachina-v1-token-intel.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>SolMachina · /v1/token-risk</strong></td>
       <td><code>https://api.solmachina.com/v1/token-risk</code></td>
       <td>HTTP 402</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -275,10 +484,13 @@
       <td><a href="fixtures/solmachina-v1-token-risk.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>SolMachina · /v1/tx-inspect</strong></td>
       <td><code>https://api.solmachina.com/v1/tx-inspect</code></td>
       <td>HTTP 402</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
@@ -287,10 +499,13 @@
       <td><a href="fixtures/solmachina-v1-tx-inspect.json" target="_blank">fixture</a></td>
     </tr>
   
-    <tr>
+    <tr class="fail-row">
       <td><strong>SolMachina · /v1/wallet-scan</strong></td>
       <td><code>https://api.solmachina.com/v1/wallet-scan</code></td>
       <td>HTTP 402</td>
+      <td>0</td>
+      <td>undefined B</td>
+      <td>— ms</td>
       <td style="color:#dc2626; font-weight:bold;">
         ❌ FAIL
       </td>
