@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>x402 Conformance Probe — Relatório de Conformidade</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; background: #f8fafc; color: #0f172a; line-height: 1.6; }
+    .container { max-width: 900px; margin: 0 auto; padding: 48px 24px; }
+    header { border-bottom: 1px solid #e2e8f0; padding-bottom: 32px; margin-bottom: 40px; }
+    h1 { font-size: 32px; margin: 0 0 8px 0; letter-spacing: -0.02em; }
+    .subtitle { color: #64748b; font-size: 16px; }
+    .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-right: 8px; margin-bottom: 8px; }
+    .badge.pass { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
+    .badge.fail { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 40px 0; }
+    .card { background: white; padding: 24px; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 1px solid #f1f5f9; }
+    .card h3 { margin: 0 0 12px 0; font-size: 16px; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; }
+    .card .big { font-size: 30px; font-weight: 700; margin-bottom: 6px; }
+    .card .big.pass { color: #15803d; }
+    .card .big.fail { color: #b91c1c; }
+    .card p { margin: 0; color: #64748b; font-size: 14px; }
+    .section { margin: 50px 0; }
+    .section h2 { font-size: 20px; margin-bottom: 16px; color: #0f172a; }
+    .links { list-style: none; padding: 0; }
+    .links li { margin: 10px 0; }
+    .links a { color: #2563eb; text-decoration: none; font-weight: 500; }
+    .links a:hover { text-decoration: underline; }
+    .code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 13px; }
+    .note { color: #64748b; font-size: 13px; border-top: 1px solid #e2e8f0; padding-top: 24px; margin-top: 40px; }
+    .footer { margin-top: 60px; color: #94a3b8; font-size: 12px; border-top: 1px solid #e2e8f0; padding-top: 24px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>x402 Conformance Probe</h1>
+      <p class="subtitle">Verificando se endpoints públicos com HTTP 402 (Payment Required) realmente aceitam liquidação.</p>
+      <div>
+        <span class="badge pass">✅ 1 pass</span>
+        <span class="badge fail">❌ 29 fail</span>
+        <span class="badge">30 endpoints</span>
+        <span class="badge">16 retornam 402</span>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>📊 Relatório de Conformidade</h2>
+      <p>Tabela pass/fail completa com 30 endpoints públicos x402, motivos de uma linha para cada falha, canais de contato dos donos e links para os fixtures salvos.</p>
+      <a href="/report/index.html" style="background:#2563eb;color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:600;display:inline-block;">Abrir relatório →</a>
+    </section>
+
+    <section class="section">
+      <h2>📋 Defeitos Reportados (com issues no GitHub)</h2>
+      <p>Cada defeito genuíno foi reportado ao dono do endpoint pelo canal documentado, com issue linkada no repositório.</p>
+      <ul class="links">
+        <li><a href="https://github.com/developerfred/x402-conformance-probe/issues/1" target="_blank">#1 — Qonoro: retorna 405 em vez de 402</a></li>
+        <li><a href="https://github.com/developerfred/x402-conformance-probe/issues/2" target="_blank">#2 — Browserbase: retorna 200 sem exigir pagamento</a></li>
+        <li><a href="https://github.com/developerfred/x402-conformance-probe/issues/3" target="_blank">#3 — Averray Verify: retorna 405 em vez de 402</a></li>
+        <li><a href="https://github.com/developerfred/x402-conformance-probe/issues/4" target="_blank">#4 — Exa: retorna 404</a></li>
+        <li><a href="https://github.com/developerfred/x402-conformance-probe/issues/5" target="_blank">#5 — SolMachina: 10 endpoints com corpo vazio na 402</a></li>
+        <li><a href="https://github.com/developerfred/x402-conformance-probe/issues/6" target="_blank">#6 — OpenWeb Ninja: rede/amount incorretos</a></li>
+        <li><a href="https://github.com/developerfred/x402-conformance-probe/issues/7" target="_blank">#7 — Financial Datasets: 402 sem oferta válida</a></li>
+        <li><a href="https://github.com/developerfred/x402-conformance-probe/issues/8" target="_blank">#8 — sol-defi-desk: rede Solana CAIP-2, não eip155</a></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>🧪 Endpoint de Teste Próprio (Paid Retry)</h2>
+      <p>Endpoint x402 próprio que confirma o fluxo completo: <code class="code">402 → PAYMENT-REQUIRED → 200 { paid: true }</code>. Pagamento gravado em <code class="code">test-endpoint/last-payment.json</code>.</p>
+      <ul class="links">
+        <li><a href="https://github.com/developerfred/x402-conformance-probe/tree/main/test-endpoint" target="_blank">Código do endpoint de teste</a></li>
+        <li><a href="https://github.com/developerfred/x402-conformance-probe/blob/main/test-endpoint/last-payment.json" target="_blank">Comprovante de pagamento salvo</a></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>📚 Documentação</h2>
+      <ul class="links">
+        <li><a href="https://github.com/developerfred/x402-conformance-probe/blob/main/README.md" target="_blank">README — como executar o probe</a></li>
+        <li><a href="https://github.com/developerfred/x402-conformance-probe/blob/main/REPORTED.md" target="_blank">REPORTED.md — todos os defeitos e issues linkadas</a></li>
+        <li><a href="https://github.com/developerfred/x402-conformance-probe" target="_blank">Repositório no GitHub</a></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>🔁 Replay Offline</h2>
+      <p>Toda falha é reproduzível a partir dos fixtures salvos. Rode localmente:</p>
+      <div style="background:#0f172a;color:#fff;padding:16px;border-radius:6px;font-family:ui-monospace,monospace;font-size:13px;overflow-x:auto;">
+npm run fetch && npm run validate && npm run replay
+      </div>
+    </section>
+
+    <div class="note">
+      <strong>Por que isso importa:</strong> um 402 quebrado é invisível até um agente tentar pagar — e então a falha parece ser do comprador. Esta tabela pública transforma o problema em responsabilidade do vendedor, com um recibo.
+    </div>
+
+    <div class="footer">
+      x402 Conformance Probe — Open bounty · Proposta inicial 0.005 ETH · https://github.com/developerfred/x402-conformance-probe
+    </div>
+  </div>
+</body>
+</html>
