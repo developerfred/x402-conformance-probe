@@ -1,0 +1,23 @@
+{
+  "name": "Browserbase (x402 endpoint)",
+  "url": "https://x402.browserbase.com/",
+  "channel": "https://docs.browserbase.com/integrations/x402/introduction",
+  "fetchedAt": "2026-11-02T13:01:17.130Z",
+  "status": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 02 Nov 2026 13:01:17 GMT",
+    "etag": "W/\"ca6-FZfnSgvqzu8lxRb6bjXP2jVCFqQ\"",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding",
+    "via": "1.1 56d84f665e9029878cb3adcd83a21026.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "LFIn8uzvNWRNcDgurycBXps_s08VzVClY-Vc-YsQYeja8OKL73xTzg==",
+    "x-amz-cf-pop": "LIS50-P1",
+    "x-cache": "Miss from cloudfront",
+    "x-powered-by": "Express"
+  },
+  "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Browserbase Payment Gateway (x402 + MPP)</title>\n  <meta name=\"description\" content=\"Pay-per-use browser sessions with crypto. No API keys, no accounts -- just pay and connect via x402 or MPP.\">\n  <meta property=\"og:title\" content=\"Browserbase Payment Gateway (x402 + MPP)\">\n  <meta property=\"og:description\" content=\"Pay-per-use browser sessions with crypto. No API keys, no accounts -- just pay and connect via x402 or MPP.\">\n  <meta property=\"og:image\" content=\"https://x402.browserbase.com/logo.svg\">\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.ico\">\n  <style>\n    body { font-family: system-ui, sans-serif; max-width: 700px; margin: 50px auto; padding: 20px; background: #0a0a0a; color: #fafafa; }\n    h1 { color: #fff; display: flex; align-items: center; gap: 12px; }\n    h1 img { width: 40px; height: 40px; }\n    code { background: #1a1a1a; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }\n    a { color: #3b82f6; }\n    .price { color: #22c55e; font-weight: bold; }\n    .protocol { border: 1px solid #333; border-radius: 8px; padding: 16px; margin: 12px 0; }\n    .protocol h3 { margin-top: 0; }\n    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75em; font-weight: bold; }\n    .badge-live { background: #166534; color: #4ade80; }\n    .badge-test { background: #854d0e; color: #facc15; }\n  </style>\n</head>\n<body>\n  <h1><img src=\"/logo.svg\" alt=\"Browserbase\"> Browserbase Payment Gateway</h1>\n  <p>Pay-per-use browser sessions with crypto. No API keys, no accounts -- just pay and connect via x402 or MPP.</p>\n  <p class=\"price\">$0.12/hour</p>\n\n  <div class=\"protocol\">\n    <h3>x402 Protocol <span class=\"badge badge-live\">LIVE</span></h3>\n    <p>USDC on Base or Solana via HTTP 402 + X-PAYMENT header</p>\n    <code>purl POST https://x402.browserbase.com/browser/session/create -d '{\"estimatedMinutes\": 30}'</code>\n  </div>\n\n  <div class=\"protocol\">\n    <h3>MPP on Tempo <span class=\"badge badge-live\">MAINNET</span></h3>\n    <p>Stripe Tempo chain via WWW-Authenticate + mppx</p>\n    <code>npx mppx https://mpp.browserbase.com/browser/session/create -d '{\"estimatedMinutes\": 30}'</code>\n    <p style=\"font-size: 0.85em; color: #888;\">Status: Enabled (mainnet)</p>\n  </div>\n\n  <h2>Endpoints</h2>\n  <h3>Browser Sessions <span class=\"price\">$0.12/hour</span></h3>\n  <ul>\n    <li><code>POST /browser/session/create</code> -- Create a browser session</li>\n    <li><code>GET /browser/session/:id/status</code> -- Check session status (free)</li>\n    <li><code>POST /browser/session/:id/extend</code> -- Add more time</li>\n    <li><code>DELETE /browser/session/:id</code> -- Terminate session (free)</li>\n  </ul>\n  <h3>Search <span class=\"price\">$0.01/request</span></h3>\n  <ul>\n    <li><code>POST /search</code> -- Web search with structured results</li>\n  </ul>\n  <h3>Fetch <span class=\"price\">$0.01/request</span></h3>\n  <ul>\n    <li><code>POST /fetch</code> -- Fetch a page and return content + metadata</li>\n  </ul>\n  <p><a href=\"https://x402.org\">x402 Protocol</a> · <a href=\"https://mpp.dev\">MPP Protocol</a></p>\n</body>\n</html>",
+  "error": null
+}

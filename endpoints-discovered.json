@@ -1,0 +1,722 @@
+[
+  {
+    "name": "Averray Verify · /verify/runs",
+    "url": "https://api.averray.com/verify/runs",
+    "channel": "https://averray.com/verify/",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "sol-defi-desk · /v1/lending-reserve",
+    "url": "https://95.216.126.169.sslip.io/v1/lending-reserve",
+    "channel": "https://95.216.126.169.sslip.io/",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "sol-defi-desk · /v1/token-check",
+    "url": "https://95.216.126.169.sslip.io/v1/token-check",
+    "channel": "https://95.216.126.169.sslip.io/",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "sol-defi-desk · /v1/token-check/batch",
+    "url": "https://95.216.126.169.sslip.io/v1/token-check/batch",
+    "channel": "https://95.216.126.169.sslip.io/",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "SolMachina · /v1/epoch",
+    "url": "https://api.solmachina.com/v1/epoch",
+    "channel": "https://api.solmachina.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "SolMachina · /v1/kamino/markets",
+    "url": "https://api.solmachina.com/v1/kamino/markets",
+    "channel": "https://api.solmachina.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "SolMachina · /v1/pretrade",
+    "url": "https://api.solmachina.com/v1/pretrade",
+    "channel": "https://api.solmachina.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "SolMachina · /v1/priority-fee",
+    "url": "https://api.solmachina.com/v1/priority-fee",
+    "channel": "https://api.solmachina.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "SolMachina · /v1/sgp-checkpoint",
+    "url": "https://api.solmachina.com/v1/sgp-checkpoint",
+    "channel": "https://api.solmachina.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "SolMachina · /v1/tipfloor",
+    "url": "https://api.solmachina.com/v1/tipfloor",
+    "channel": "https://api.solmachina.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "SolMachina · /v1/token-intel",
+    "url": "https://api.solmachina.com/v1/token-intel",
+    "channel": "https://api.solmachina.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "SolMachina · /v1/token-risk",
+    "url": "https://api.solmachina.com/v1/token-risk",
+    "channel": "https://api.solmachina.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "SolMachina · /v1/tx-inspect",
+    "url": "https://api.solmachina.com/v1/tx-inspect",
+    "channel": "https://api.solmachina.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "SolMachina · /v1/wallet-scan",
+    "url": "https://api.solmachina.com/v1/wallet-scan",
+    "channel": "https://api.solmachina.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/address/normalize",
+    "url": "https://api.qonoro.ai/v1/address/normalize",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/company/enrich",
+    "url": "https://api.qonoro.ai/v1/company/enrich",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/company/research",
+    "url": "https://api.qonoro.ai/v1/company/research",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/company/search",
+    "url": "https://api.qonoro.ai/v1/company/search",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/competitors/analyze",
+    "url": "https://api.qonoro.ai/v1/competitors/analyze",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/domain-resolver/resolve",
+    "url": "https://api.qonoro.ai/v1/domain-resolver/resolve",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/domain/intelligence",
+    "url": "https://api.qonoro.ai/v1/domain/intelligence",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/email/validate",
+    "url": "https://api.qonoro.ai/v1/email/validate",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/hiring-signals/find",
+    "url": "https://api.qonoro.ai/v1/hiring-signals/find",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/intent-signals/find",
+    "url": "https://api.qonoro.ai/v1/intent-signals/find",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/job-changes/detect",
+    "url": "https://api.qonoro.ai/v1/job-changes/detect",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/kyb/verify",
+    "url": "https://api.qonoro.ai/v1/kyb/verify",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/naics/classify",
+    "url": "https://api.qonoro.ai/v1/naics/classify",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/news/sentiment",
+    "url": "https://api.qonoro.ai/v1/news/sentiment",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/outbound/personalize",
+    "url": "https://api.qonoro.ai/v1/outbound/personalize",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/person/enrich",
+    "url": "https://api.qonoro.ai/v1/person/enrich",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/person/search",
+    "url": "https://api.qonoro.ai/v1/person/search",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/phone/validate",
+    "url": "https://api.qonoro.ai/v1/phone/validate",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/revenue/qualify-lead",
+    "url": "https://api.qonoro.ai/v1/revenue/qualify-lead",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/sales-signals/find",
+    "url": "https://api.qonoro.ai/v1/sales-signals/find",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/url/health",
+    "url": "https://api.qonoro.ai/v1/url/health",
+    "channel": "https://qonoro.ai",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Base Agent Evidence & Route API · /v1/activity/search",
+    "url": "https://merchant-base.mikedotexe.com/v1/activity/search",
+    "channel": "https://merchant-base.mikedotexe.com/",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Base Agent Evidence & Route API · /v1/entities/0x0000000000000000000000000000000000000000",
+    "url": "https://merchant-base.mikedotexe.com/v1/entities/0x0000000000000000000000000000000000000000",
+    "channel": "https://merchant-base.mikedotexe.com/",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Base Agent Evidence & Route API · /v1/evidence/account",
+    "url": "https://merchant-base.mikedotexe.com/v1/evidence/account",
+    "channel": "https://merchant-base.mikedotexe.com/",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Base Agent Evidence & Route API · /v1/evidence/transaction",
+    "url": "https://merchant-base.mikedotexe.com/v1/evidence/transaction",
+    "channel": "https://merchant-base.mikedotexe.com/",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Base Agent Evidence & Route API · /v1/routes/usdc/quote",
+    "url": "https://merchant-base.mikedotexe.com/v1/routes/usdc/quote",
+    "channel": "https://merchant-base.mikedotexe.com/",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "DEX Liquidity, Slippage & Orderflow Audit API · /v1/token-intel",
+    "url": "https://token-intel-72343955726.us-central1.run.app/v1/token-intel",
+    "channel": "https://token-intel-72343955726.us-central1.run.app",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "cloudpayX Agent · /agent/arbitrage-check",
+    "url": "https://api.cloudpayxagent.xyz/agent/arbitrage-check",
+    "channel": "https://cloudpayx.com/agents",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "cloudpayX Agent · /agent/ledger-status",
+    "url": "https://api.cloudpayxagent.xyz/agent/ledger-status",
+    "channel": "https://cloudpayx.com/agents",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "cloudpayX Agent · /agent/repair",
+    "url": "https://api.cloudpayxagent.xyz/agent/repair",
+    "channel": "https://cloudpayx.com/agents",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "cloudpayX Agent · /agent/risk-check",
+    "url": "https://api.cloudpayxagent.xyz/agent/risk-check",
+    "channel": "https://cloudpayx.com/agents",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "cloudpayX Agent · /agent/stablecoin-route",
+    "url": "https://api.cloudpayxagent.xyz/agent/stablecoin-route",
+    "channel": "https://cloudpayx.com/agents",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "cloudpayX Agent · /agent/token-analysis",
+    "url": "https://api.cloudpayxagent.xyz/agent/token-analysis",
+    "channel": "https://cloudpayx.com/agents",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "cloudpayX Agent · /agent/v3/arbitrage-check",
+    "url": "https://api.cloudpayxagent.xyz/agent/v3/arbitrage-check",
+    "channel": "https://cloudpayx.com/agents",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "cloudpayX Agent · /agent/v3/asset-analysis",
+    "url": "https://api.cloudpayxagent.xyz/agent/v3/asset-analysis",
+    "channel": "https://cloudpayx.com/agents",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "cloudpayX Agent · /agent/v3/repair",
+    "url": "https://api.cloudpayxagent.xyz/agent/v3/repair",
+    "channel": "https://cloudpayx.com/agents",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "cloudpayX Agent · /agent/v3/risk-check",
+    "url": "https://api.cloudpayxagent.xyz/agent/v3/risk-check",
+    "channel": "https://cloudpayx.com/agents",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "cloudpayX Agent · /agent/v3/stablecoin-route",
+    "url": "https://api.cloudpayxagent.xyz/agent/v3/stablecoin-route",
+    "channel": "https://cloudpayx.com/agents",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Kertivo · /address/check",
+    "url": "https://kertivo.com/address/check",
+    "channel": "https://kertivo.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Kertivo · /address/check/full",
+    "url": "https://kertivo.com/address/check/full",
+    "channel": "https://kertivo.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Kertivo · /check",
+    "url": "https://kertivo.com/check",
+    "channel": "https://kertivo.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Kertivo · /check/deep",
+    "url": "https://kertivo.com/check/deep",
+    "channel": "https://kertivo.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Kertivo · /trust/lookup",
+    "url": "https://kertivo.com/trust/lookup",
+    "channel": "https://kertivo.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Proyecto Ayuda Data API · /btc-price",
+    "url": "https://anibalb.duckdns.org/x402/btc-price",
+    "channel": "https://anibalb.duckdns.org/x402",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Proyecto Ayuda Data API · /eth-price",
+    "url": "https://anibalb.duckdns.org/x402/eth-price",
+    "channel": "https://anibalb.duckdns.org/x402",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Proyecto Ayuda Data API · /sanctions-check",
+    "url": "https://anibalb.duckdns.org/x402/sanctions-check",
+    "channel": "https://anibalb.duckdns.org/x402",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Proyecto Ayuda Data API · /vat-check",
+    "url": "https://anibalb.duckdns.org/x402/vat-check",
+    "channel": "https://anibalb.duckdns.org/x402",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Soren · /v1/attestation",
+    "url": "https://soren.com/v1/attestation",
+    "channel": "https://soren.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Soren · /v1/chain/receipt",
+    "url": "https://soren.com/v1/chain/receipt",
+    "channel": "https://soren.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Soren · /v1/commit",
+    "url": "https://soren.com/v1/commit",
+    "channel": "https://soren.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Soren · /v1/draw",
+    "url": "https://soren.com/v1/draw",
+    "channel": "https://soren.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Soren · /v1/free-games",
+    "url": "https://soren.com/v1/free-games",
+    "channel": "https://soren.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Soren · /v1/oracle/fx",
+    "url": "https://soren.com/v1/oracle/fx",
+    "channel": "https://soren.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Soren · /v1/paid-ping",
+    "url": "https://soren.com/v1/paid-ping",
+    "channel": "https://soren.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Soren · /v1/web/read",
+    "url": "https://soren.com/v1/web/read",
+    "channel": "https://soren.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Soren · /v1/web/search",
+    "url": "https://soren.com/v1/web/search",
+    "channel": "https://soren.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "StablePulse · /pulse",
+    "url": "https://stable.lonestaroracle.xyz/pulse",
+    "channel": "https://x402-list.com/services/stablepulse",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "WalletTriage · /scan",
+    "url": "https://api.wallettriage.com/scan",
+    "channel": "https://wallettriage.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Demand Factory Base x402 Courier · /api/courier-usdc",
+    "url": "https://api-v2.appdeploy.ai/app/demand-factory-base-courier-az59go/api/courier-usdc",
+    "channel": "https://github.com/TheAliphant/Sur",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "DreamWidget · /api/v1/plan",
+    "url": "https://dreamwidget.com/api/v1/plan",
+    "channel": "https://dreamwidget.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "StableSocial · /api/sc/facebook/adLibrary/company/ads",
+    "url": "https://stablesocial.dev/api/sc/facebook/adLibrary/company/ads",
+    "channel": "https://x402-list.com/services/stablesocial",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "StableSocial · /api/sc/facebook/profile/posts",
+    "url": "https://stablesocial.dev/api/sc/facebook/profile/posts",
+    "channel": "https://x402-list.com/services/stablesocial",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "StableSocial · /api/sc/instagram/user/reels",
+    "url": "https://stablesocial.dev/api/sc/instagram/user/reels",
+    "channel": "https://x402-list.com/services/stablesocial",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "StableSocial · /api/sc/reddit/subreddit/details",
+    "url": "https://stablesocial.dev/api/sc/reddit/subreddit/details",
+    "channel": "https://x402-list.com/services/stablesocial",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "StableSocial · /api/sc/tiktok/profile",
+    "url": "https://stablesocial.dev/api/sc/tiktok/profile",
+    "channel": "https://x402-list.com/services/stablesocial",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "StableSocial · /api/sc/tiktok/song/videos",
+    "url": "https://stablesocial.dev/api/sc/tiktok/song/videos",
+    "channel": "https://x402-list.com/services/stablesocial",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "StableSocial · /api/sc/truthsocial/user/posts",
+    "url": "https://stablesocial.dev/api/sc/truthsocial/user/posts",
+    "channel": "https://x402-list.com/services/stablesocial",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "StableSocial · /api/sc/youtube/channel",
+    "url": "https://stablesocial.dev/api/sc/youtube/channel",
+    "channel": "https://x402-list.com/services/stablesocial",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "StableSocial · /api/sc/youtube/channel-videos",
+    "url": "https://stablesocial.dev/api/sc/youtube/channel-videos",
+    "channel": "https://x402-list.com/services/stablesocial",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "StableSocial · /api/sc/youtube/channel/community-posts",
+    "url": "https://stablesocial.dev/api/sc/youtube/channel/community-posts",
+    "channel": "https://x402-list.com/services/stablesocial",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "GoldRush · /{chain}/address/{address}/balances_nft/",
+    "url": "https://x402.goldrush.dev/v1/{chain}/address/{address}/balances_nft/",
+    "channel": "https://goldrush.dev",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "GoldRush · /{chain}/address/{address}/balances_v2/",
+    "url": "https://x402.goldrush.dev/v1/{chain}/address/{address}/balances_v2/",
+    "channel": "https://goldrush.dev",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Agent Data API · /api/v1/google-serp",
+    "url": "https://agent.chiemgaufilms.com/api/v1/google-serp",
+    "channel": "https://agent.chiemgaufilms.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "TELAGO Korea Physical Execution & Logistics Decision API · /korea-lastmeter/service-time",
+    "url": "https://ozeejewwpjmabshxyitc.supabase.co/functions/v1/telago-x402-live-v1/korea-lastmeter/service-time",
+    "channel": "https://favpulse.media",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "TELAGO Korea Physical Execution & Logistics Decision API · /korea-lastmeter/stop-intelligence",
+    "url": "https://ozeejewwpjmabshxyitc.supabase.co/functions/v1/telago-x402-live-v1/korea-lastmeter/stop-intelligence",
+    "channel": "https://favpulse.media",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "TELAGO Korea Physical Execution & Logistics Decision API · /korea-physical/execution-batch",
+    "url": "https://ozeejewwpjmabshxyitc.supabase.co/functions/v1/telago-x402-live-v1/korea-physical/execution-batch",
+    "channel": "https://favpulse.media",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "TELAGO Korea Physical Execution & Logistics Decision API · /korea-physical/execution-context",
+    "url": "https://ozeejewwpjmabshxyitc.supabase.co/functions/v1/telago-x402-live-v1/korea-physical/execution-context",
+    "channel": "https://favpulse.media",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "TELAGO Korea Physical Execution & Logistics Decision API · /korea-physical/execution-pack",
+    "url": "https://ozeejewwpjmabshxyitc.supabase.co/functions/v1/telago-x402-live-v1/korea-physical/execution-pack",
+    "channel": "https://favpulse.media",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "TELAGO Korea Physical Execution & Logistics Decision API · /logistics/corridor-decision",
+    "url": "https://ozeejewwpjmabshxyitc.supabase.co/functions/v1/telago-x402-live-v1/logistics/corridor-decision",
+    "channel": "https://favpulse.media",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "MCPSecurity — Prompt Injection & MCP Tool Poisoning Firewall · /v1/mcp-security-scan",
+    "url": "https://mcp-security.agentdiet.dev/v1/mcp-security-scan",
+    "channel": "https://mcp-security.agentdiet.dev",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "MCPSecurity — Prompt Injection & MCP Tool Poisoning Firewall · /v1/prompt-guard",
+    "url": "https://mcp-security.agentdiet.dev/v1/prompt-guard",
+    "channel": "https://mcp-security.agentdiet.dev",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Nexus Gateway · /v1/code-modules",
+    "url": "https://xibzsthfrbomefnvbicb.supabase.co/functions/v1/hello-world/v1/code-modules",
+    "channel": "https://rakhmadaa-gif.github.io/nexus-core-gateway/",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Nexus Gateway · /v1/legal-code",
+    "url": "https://xibzsthfrbomefnvbicb.supabase.co/functions/v1/hello-world/v1/legal-code",
+    "channel": "https://rakhmadaa-gif.github.io/nexus-core-gateway/",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Nexus Gateway · /v1/structured-data",
+    "url": "https://xibzsthfrbomefnvbicb.supabase.co/functions/v1/hello-world/v1/structured-data",
+    "channel": "https://rakhmadaa-gif.github.io/nexus-core-gateway/",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Concordance · /tools/company-brief",
+    "url": "https://concordancehq.duckdns.org/tools/company-brief",
+    "channel": "https://concordancehq.duckdns.org",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Concordance · /tools/corroboration",
+    "url": "https://concordancehq.duckdns.org/tools/corroboration",
+    "channel": "https://concordancehq.duckdns.org",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Concordance · /tools/digest",
+    "url": "https://concordancehq.duckdns.org/tools/digest",
+    "channel": "https://concordancehq.duckdns.org",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Concordance · /tools/search",
+    "url": "https://concordancehq.duckdns.org/tools/search",
+    "channel": "https://concordancehq.duckdns.org",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Concordance · /tools/series",
+    "url": "https://concordancehq.duckdns.org/tools/series",
+    "channel": "https://concordancehq.duckdns.org",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Concordance · /tools/timeline",
+    "url": "https://concordancehq.duckdns.org/tools/timeline",
+    "channel": "https://concordancehq.duckdns.org",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Universal A2A & MCP Tool Discovery, Safe-Proxy & Swarm Router · /v1/x402-broker",
+    "url": "https://x402-broker-72343955726.us-central1.run.app/v1/x402-broker",
+    "channel": "https://x402-broker-72343955726.us-central1.run.app",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Japan Corporate-Number (法人番号) API · /batch",
+    "url": "https://houjin.agentic-jp.com/batch",
+    "channel": "https://houjin.agentic-jp.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Japan Corporate-Number (法人番号) API · /corporation/7010401052137",
+    "url": "https://houjin.agentic-jp.com/corporation/7010401052137",
+    "channel": "https://houjin.agentic-jp.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Japan Corporate-Number (法人番号) API · /report",
+    "url": "https://houjin.agentic-jp.com/report",
+    "channel": "https://houjin.agentic-jp.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Japan Corporate-Number (法人番号) API · /search",
+    "url": "https://houjin.agentic-jp.com/search",
+    "channel": "https://houjin.agentic-jp.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Japan Corporate-Number (法人番号) API · /stats",
+    "url": "https://houjin.agentic-jp.com/stats",
+    "channel": "https://houjin.agentic-jp.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Japan Corporate-Number (法人番号) API · /verify",
+    "url": "https://houjin.agentic-jp.com/verify",
+    "channel": "https://houjin.agentic-jp.com",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "LeftClaw Services · /api/audit",
+    "url": "https://leftclaw.services/api/audit",
+    "channel": "https://leftclaw.services",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "LeftClaw Services · /api/build",
+    "url": "https://leftclaw.services/api/build",
+    "channel": "https://leftclaw.services",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "LeftClaw Services · /api/consult/deep",
+    "url": "https://leftclaw.services/api/consult/deep",
+    "channel": "https://leftclaw.services",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "LeftClaw Services · /api/consult/quick",
+    "url": "https://leftclaw.services/api/consult/quick",
+    "channel": "https://leftclaw.services",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "LeftClaw Services · /api/judge",
+    "url": "https://leftclaw.services/api/judge",
+    "channel": "https://leftclaw.services",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "LeftClaw Services · /api/pfp",
+    "url": "https://leftclaw.services/api/pfp",
+    "channel": "https://leftclaw.services",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "LeftClaw Services · /api/qa",
+    "url": "https://leftclaw.services/api/qa",
+    "channel": "https://leftclaw.services",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "LeftClaw Services · /api/research",
+    "url": "https://leftclaw.services/api/research",
+    "channel": "https://leftclaw.services",
+    "source": "x402-list.com"
+  },
+  {
+    "name": "Pinata · /v1/pin/public",
+    "url": "https://402.pinata.cloud/v1/pin/public",
+    "channel": "https://pinata.cloud",
+    "source": "x402-list.com"
+  }
+]

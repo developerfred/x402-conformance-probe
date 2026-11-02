@@ -1,0 +1,18 @@
+{
+  "receivedAt": "2026-11-02T13:01:57.747Z",
+  "url": "/",
+  "paymentSignature": "demo-signature-12345",
+  "offer": {
+    "x402Version": 2,
+    "scheme": "exact",
+    "network": "eip155:8453",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "amount": "1000",
+    "payTo": "0x3e7c9cA818f713F19e126E3B7B37B47dC1411570",
+    "maxTimeoutSeconds": 300,
+    "extra": {
+      "name": "USD Coin",
+      "version": "2"
+    }
+  }
+}

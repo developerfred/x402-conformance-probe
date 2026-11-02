@@ -1,0 +1,202 @@
+[
+  {
+    "name": "CoinMarketCap (dex search)",
+    "url": "https://pro-api.coinmarketcap.com/x402/v1/dex/search?q=bnb",
+    "channel": "https://coinmarketcap.com/api/documentation/ai-agent-hub/x402",
+    "file": "coinmarketcap-dex-search.json",
+    "status": 402,
+    "ok": true,
+    "reason": "pass",
+    "headerMatchBody": true
+  },
+  {
+    "name": "Averray Verify · /verify/runs",
+    "url": "https://api.averray.com/verify/runs",
+    "channel": "https://averray.com/verify/",
+    "file": "averray-verify-verify-runs.json",
+    "status": 405,
+    "ok": false,
+    "reason": "status HTTP 405, esperado 402",
+    "headerMatchBody": null
+  },
+  {
+    "name": "Browserbase (x402 endpoint)",
+    "url": "https://x402.browserbase.com/",
+    "channel": "https://docs.browserbase.com/integrations/x402/introduction",
+    "file": "browserbase-x402-endpoint.json",
+    "status": 200,
+    "ok": false,
+    "reason": "status HTTP 200, esperado 402",
+    "headerMatchBody": null
+  },
+  {
+    "name": "Exa (search API)",
+    "url": "https://api.exa.ai/search",
+    "channel": "https://exa.ai/docs/integrations/payments/x402/quickstart",
+    "file": "exa-search-api.json",
+    "status": 404,
+    "ok": false,
+    "reason": "status HTTP 404, esperado 402",
+    "headerMatchBody": null
+  },
+  {
+    "name": "Financial Datasets (earnings)",
+    "url": "https://api.financialdatasets.ai/earnings?ticker=NVDA&limit=4",
+    "channel": "https://docs.financialdatasets.ai/x402",
+    "file": "financial-datasets-earnings.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo: x402Version ausente ou não numérico",
+    "headerMatchBody": false
+  },
+  {
+    "name": "OpenWeb Ninja (JSearch jobs)",
+    "url": "https://x402.openwebninja.com/jsearch/search-v2?query=software+engineer+jobs+in+austin",
+    "channel": "https://www.openwebninja.com/blog/x402-agentic-payments",
+    "file": "openweb-ninja-jsearch-jobs.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo entry[0]: network inválido (\"base\")",
+    "headerMatchBody": false
+  },
+  {
+    "name": "Qonoro Intelligence API · /v1/address/normalize",
+    "url": "https://api.qonoro.ai/v1/address/normalize",
+    "channel": "https://qonoro.ai",
+    "file": "qonoro-intelligence-api-v1-address-normalize.json",
+    "status": 405,
+    "ok": false,
+    "reason": "status HTTP 405, esperado 402",
+    "headerMatchBody": null
+  },
+  {
+    "name": "sol-defi-desk · /v1/lending-reserve",
+    "url": "https://95.216.126.169.sslip.io/v1/lending-reserve",
+    "channel": "https://95.216.126.169.sslip.io/",
+    "file": "sol-defi-desk-v1-lending-reserve.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo entry[0]: network inválido (\"solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp\")",
+    "headerMatchBody": true
+  },
+  {
+    "name": "sol-defi-desk · /v1/token-check/batch",
+    "url": "https://95.216.126.169.sslip.io/v1/token-check/batch",
+    "channel": "https://95.216.126.169.sslip.io/",
+    "file": "sol-defi-desk-v1-token-check-batch.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo entry[0]: network inválido (\"solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp\")",
+    "headerMatchBody": true
+  },
+  {
+    "name": "sol-defi-desk · /v1/token-check",
+    "url": "https://95.216.126.169.sslip.io/v1/token-check",
+    "channel": "https://95.216.126.169.sslip.io/",
+    "file": "sol-defi-desk-v1-token-check.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo entry[0]: network inválido (\"solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp\")",
+    "headerMatchBody": true
+  },
+  {
+    "name": "SolMachina · /v1/epoch",
+    "url": "https://api.solmachina.com/v1/epoch",
+    "channel": "https://api.solmachina.com",
+    "file": "solmachina-v1-epoch.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo: x402Version ausente ou não numérico",
+    "headerMatchBody": false
+  },
+  {
+    "name": "SolMachina · /v1/kamino/markets",
+    "url": "https://api.solmachina.com/v1/kamino/markets",
+    "channel": "https://api.solmachina.com",
+    "file": "solmachina-v1-kamino-markets.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo: x402Version ausente ou não numérico",
+    "headerMatchBody": false
+  },
+  {
+    "name": "SolMachina · /v1/pretrade",
+    "url": "https://api.solmachina.com/v1/pretrade",
+    "channel": "https://api.solmachina.com",
+    "file": "solmachina-v1-pretrade.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo: x402Version ausente ou não numérico",
+    "headerMatchBody": false
+  },
+  {
+    "name": "SolMachina · /v1/priority-fee",
+    "url": "https://api.solmachina.com/v1/priority-fee",
+    "channel": "https://api.solmachina.com",
+    "file": "solmachina-v1-priority-fee.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo: x402Version ausente ou não numérico",
+    "headerMatchBody": false
+  },
+  {
+    "name": "SolMachina · /v1/sgp-checkpoint",
+    "url": "https://api.solmachina.com/v1/sgp-checkpoint",
+    "channel": "https://api.solmachina.com",
+    "file": "solmachina-v1-sgp-checkpoint.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo: x402Version ausente ou não numérico",
+    "headerMatchBody": false
+  },
+  {
+    "name": "SolMachina · /v1/tipfloor",
+    "url": "https://api.solmachina.com/v1/tipfloor",
+    "channel": "https://api.solmachina.com",
+    "file": "solmachina-v1-tipfloor.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo: x402Version ausente ou não numérico",
+    "headerMatchBody": false
+  },
+  {
+    "name": "SolMachina · /v1/token-intel",
+    "url": "https://api.solmachina.com/v1/token-intel",
+    "channel": "https://api.solmachina.com",
+    "file": "solmachina-v1-token-intel.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo: x402Version ausente ou não numérico",
+    "headerMatchBody": false
+  },
+  {
+    "name": "SolMachina · /v1/token-risk",
+    "url": "https://api.solmachina.com/v1/token-risk",
+    "channel": "https://api.solmachina.com",
+    "file": "solmachina-v1-token-risk.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo: x402Version ausente ou não numérico",
+    "headerMatchBody": false
+  },
+  {
+    "name": "SolMachina · /v1/tx-inspect",
+    "url": "https://api.solmachina.com/v1/tx-inspect",
+    "channel": "https://api.solmachina.com",
+    "file": "solmachina-v1-tx-inspect.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo: x402Version ausente ou não numérico",
+    "headerMatchBody": false
+  },
+  {
+    "name": "SolMachina · /v1/wallet-scan",
+    "url": "https://api.solmachina.com/v1/wallet-scan",
+    "channel": "https://api.solmachina.com",
+    "file": "solmachina-v1-wallet-scan.json",
+    "status": 402,
+    "ok": false,
+    "reason": "corpo: x402Version ausente ou não numérico",
+    "headerMatchBody": false
+  }
+]

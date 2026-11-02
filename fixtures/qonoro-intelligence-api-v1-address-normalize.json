@@ -1,0 +1,25 @@
+{
+  "name": "Qonoro Intelligence API · /v1/address/normalize",
+  "url": "https://api.qonoro.ai/v1/address/normalize",
+  "channel": "https://qonoro.ai",
+  "fetchedAt": "2026-11-02T13:01:20.857Z",
+  "status": 405,
+  "headers": {
+    "allow": "POST",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a54353cb9f89defa-MRS",
+    "connection": "keep-alive",
+    "content-length": "31",
+    "content-type": "application/json",
+    "date": "Mon, 02 Nov 2026 13:01:20 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=n6h0%2BQIO44NduGWsoTSXlJXTX2sVJYWX4Q8d7zzcGWjSec4%2Fg5q%2Fq4n7RFo5xBCWvq0mEG98ZtHXKoRF0YTvX0dAGCe7EWGWaMJMYA%2FuGe%2B8E9iGbnltcvBGOgGwjvXeiUAwmhdwwBkBxaAn\"}]}",
+    "server": "cloudflare",
+    "x-hikari-trace": "cdg1.e9jw",
+    "x-railway-edge": "cdg1",
+    "x-railway-request-id": "0e7YAwwjTRGvaDF69I3ezw"
+  },
+  "body": "{\"detail\":\"Method Not Allowed\"}",
+  "error": null
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Averray Verify · /verify/runs",
+  "url": "https://api.averray.com/verify/runs",
+  "channel": "https://averray.com/verify/",
+  "fetchedAt": "2026-11-02T13:01:17.754Z",
+  "status": 405,
+  "headers": {
+    "allow": "POST",
+    "alt-svc": "h3=\":443\"; ma=2592000",
+    "content-length": "221",
+    "content-security-policy": "default-src 'none'; frame-ancestors 'none'",
+    "content-type": "application/json",
+    "date": "Mon, 02 Nov 2026 13:01:17 GMT",
+    "permissions-policy": "geolocation=(), microphone=(), camera=(), payment=(), usb=()",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "via": "1.1 Caddy",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-request-id": "72b52d43-61b8-49da-8351-842e8acbf6f4"
+  },
+  "body": "{\n  \"error\": \"method_not_allowed\",\n  \"message\": \"Create a Verify run with POST /verify/runs.\",\n  \"billing\": {\n    \"status\": \"not_captured\"\n  },\n  \"billingRule\": \"No verdict, no charge. Inconclusive runs are not billed.\"\n}",
+  "error": null
+}

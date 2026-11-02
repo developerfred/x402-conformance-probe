@@ -1,0 +1,9 @@
+node_modules/
+.npm-global/
+.npm-cache/
+.env
+.env.local
+*.log
+vercel.json
+.dist/
+coverage/
