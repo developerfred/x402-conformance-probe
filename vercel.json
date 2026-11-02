@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "framework": null,
+  "buildCommand": "echo 'skip build'",
+  "outputDirectory": ".",
+  "devCommand": "echo 'skip dev'",
+  "installCommand": "npm install",
+  "routes": [
+    { "src": "/report/(.*)", "headers": { "Cache-Control": "public, max-age=60" } },
+    { "src": "/fixtures/(.*)", "headers": { "Cache-Control": "public, max-age=60" } },
+    { "src": "/test-endpoint/(.*)", "headers": { "Cache-Control": "public, max-age=60" } },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
